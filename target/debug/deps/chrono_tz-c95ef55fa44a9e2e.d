@@ -1,0 +1,10 @@
+/home/tomas/Documents/projects/rust/datetimes/target/debug/deps/chrono_tz-c95ef55fa44a9e2e.d: /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/lib.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/binary_search.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/mod.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/directory.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/timezone_impl.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/timezones.rs
+
+/home/tomas/Documents/projects/rust/datetimes/target/debug/deps/libchrono_tz-c95ef55fa44a9e2e.rmeta: /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/lib.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/binary_search.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/mod.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/directory.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/timezone_impl.rs /home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/timezones.rs
+
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/lib.rs:
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/binary_search.rs:
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/mod.rs:
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/directory.rs:
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/timezone_impl.rs:
+/home/tomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-tz-0.10.4/src/prebuilt/timezones.rs:
