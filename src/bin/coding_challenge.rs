@@ -35,23 +35,19 @@ fn main() {
             "2025**04**19 16:00:00 -04:00",
             "Started Rust study session",
         ),
-        (
-            "2025**04**19 18:30:00 -04:00",
-            "Ended Rust study session",
-        ),
+        ("2025**04**19 18:30:00 -04:00", "Went to bed"),
         ("ERR", "ERR"),
+        ("2025**04**19 18:30:00 -04:00", "Resumed Rust study"),
     ];
 
-    let format = "%Y**%m**%d %H:%M:%S %z";
+    let format = "%Y**%m**%d !! %H:%M:%S %z";
 
-    for (timestamp, description) in event_data {
-        match DateTime::parse_from_str(timestamp, format) {
-            Ok(dt) => {
-                println!("{} → {}", dt, description);
-            }
-            Err(_) => {
-                println!("Invalid timestamp → {}", description);
-            }
+    let events = event_data.into_iter()
+        .filter_map(|(timestamp, message)| {
+        let parsed_datetime = DateTime::parse_from_str(timestamp, format);
+        match parsed_datetime {
+            Ok(datetime) => Some((datetime.with_timezone(&Utc), message)),
+            Err(_) => None,
         }
-    }
+    });
 }
