@@ -42,12 +42,22 @@ fn main() {
 
     let format = "%Y**%m**%d !! %H:%M:%S %z";
 
-    let events = event_data.into_iter()
+    let events: Vec<_> = event_data
+        .into_iter()
         .filter_map(|(timestamp, message)| {
-        let parsed_datetime = DateTime::parse_from_str(timestamp, format);
-        match parsed_datetime {
-            Ok(datetime) => Some((datetime.with_timezone(&Utc), message)),
-            Err(_) => None,
-        }
-    });
+            let parsed_datetime = DateTime::parse_from_str(timestamp, format);
+            match parsed_datetime {
+                Ok(datetime) => Some((datetime.with_timezone(&Utc), message)),
+                Err(_) => None,
+            }
+        })
+        .collect();
+
+    let mut previous_event: Option<DateTime<Utc>> = None;
+
+    for (utc_datetime, message) in events {
+        let display_time = utc_datetime.format("%Y-%m-%d %H:%M:%S UTC");
+        println!("Event time: {display_time}");
+        println!("Event message: {message}");
+    }    
 }
