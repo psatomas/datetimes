@@ -59,5 +59,18 @@ fn main() {
         let display_time = utc_datetime.format("%Y-%m-%d %H:%M:%S UTC");
         println!("Event time: {display_time}");
         println!("Event message: {message}");
+
+        if let Some(previous_datetime) = previous_event{
+            let difference = utc_datetime - previous_datetime;
+            let hours = difference.num_hours();
+            let minutes = difference.num_minutes() % 60;
+            let seconds = difference.num_seconds() % 60;
+            println!("Time since previous event: {}h {}m {}s",
+                hours, minutes, seconds
+            );
+        }
+
+        println!();
+        previous_event = Some(utc_datetime); 
     }    
 }
